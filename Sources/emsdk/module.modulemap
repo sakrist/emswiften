@@ -1,0 +1,9 @@
+module emsdk [system] {
+    
+    header "emsdk.h"
+    
+    link "c"
+    link "compiler_rt"
+
+    export *
+}
