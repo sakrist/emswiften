@@ -1,9 +1,20 @@
 module emsdk [system] {
     
-    header "emsdk.h"
-    
-    link "c"
-    link "compiler_rt"
+    module c {
+        header "libc.h"
+        link "c"
+        link "compiler_rt"
+        export *
+    }
 
+    module emscripten {
+        header "emsdk.h"
+        export *
+    }
+    
+    module gl {
+        header "gl.h"
+        export *
+    }
     export *
 }
