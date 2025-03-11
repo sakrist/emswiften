@@ -1,3 +1,4 @@
-module missing {
-  header "swift_missing.h"
+module emswiften {
+  header "swift_missing_things.h"
+  export *
 }
