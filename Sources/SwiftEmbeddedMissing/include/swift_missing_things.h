@@ -5,4 +5,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+extern void arc4random_buf(void *buffer, size_t size);
+
 #endif
